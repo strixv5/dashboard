@@ -19,7 +19,7 @@ export default function CircleGraph({ isDemagraphic, title, data }) {
           />
         </svg>
       </div>
-      {/* //Pass down data for chart here in component */}
+      {/* Pass down data for chart here in component */}
       {
          isDemagraphic ? <RoundFilledGraph/>: <RoundBorderGraph/>
       }
