@@ -67,8 +67,8 @@ export default function Home() {
     <>
       <header>
         <ul
-          className="bg-[#FFF4DF] text-4 font-[600] w-full flex items-center justify-between px-[60px] py-2
-     [&>*]:h-[38px] [&>*]:p-[5px_20px] [&>*]:rounded-[4px] [&>*]:border-b-black"
+          className="bg-[#FFF4DF] text-4 font-[600] w-full flex items-center justify-between md:px-[60px] sm:px-6 px-2 py-2
+     [&>*]:h-[38px] [&>*]:p-[5px_10px] [&>*]:sm:p-[5px_20px] [&>*]:rounded-[4px] [&>*]:border-b-black"
         >
           <li className="border-b-[4px]">Followers</li>
           <li>Events</li>
@@ -76,10 +76,10 @@ export default function Home() {
           <li>Finances</li>
         </ul>
       </header>
-      <main className="flex gap-6 h-max flex-row flex-wrap p-[30px]">
+      <main className="flex gap-6 h-max flex-row flex-wrap sm:p-[30px] py-6 p-2">
         <CircleGraph {...GraphData.userReached} />
         <CircleGraph {...GraphData.accountEngagement} />
-        <CircleGraph {...GraphData.followersDemographics}/>
+        <CircleGraph {...GraphData.followersDemographics} />
         <ActivityGraph />
       </main>
     </>

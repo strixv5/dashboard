@@ -1,7 +1,7 @@
 
 export default function RoundBorderGraph() {
   return (
-    <div className="flex-1 flex relative items-center justify-center">
+    <div className=" flex relative items-center justify-center">
       <svg
         width="180"
         height="180"

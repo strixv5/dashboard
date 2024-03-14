@@ -3,7 +3,7 @@ import RoundFilledGraph from "./RoundFilledGraph";
 
 export default function CircleGraph({ isDemagraphic, title, data }) {
   return (
-    <div className="h-[360px] min-w-[390px] flex-1 rounded-lg shadow-[4px_4px_8px_rgb(0_0_0_/_0.1)] p-4 flex items-center justify-between flex-col bg-white">
+    <div className="h-[360px] sm:min-w-[390px] min-w-[370px] flex-1 rounded-lg shadow-[4px_4px_8px_rgb(0_0_0_/_0.1)] p-4 flex items-center justify-between flex-col bg-white">
       <div className="flex w-full items-center justify-between text-base font-[600]">
         {title}
         <svg
@@ -19,7 +19,7 @@ export default function CircleGraph({ isDemagraphic, title, data }) {
           />
         </svg>
       </div>
-      {/* Pass down data for chart here in component */}
+      {/* //Pass down data for chart here in component */}
       {
          isDemagraphic ? <RoundFilledGraph/>: <RoundBorderGraph/>
       }
