@@ -16,7 +16,7 @@ export default function ActivityGraph() {
           />
         </svg>
       </div>
-      <div className="flex w-full items-center justify-between gap-4">
+      <div className="flex w-full items-center justify-between gap-4 md:flex-row flex-col-reverse">
         <ul className="flex gap-4">
           <li className="text-[#4285F4]">Total Followers</li>
           <li className="text-[#0F9D58]">Follows</li>

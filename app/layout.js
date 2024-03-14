@@ -11,7 +11,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={`bg-[#FFFCF7] min-h-screen ${inter.className} overflow-scroll`}>{children}</body>
+      <body className={`bg-[#FFFCF7] min-h-screen ${inter.className} overflow-x-hidden overflow-y-scroll`}>{children}</body>
     </html>
   );
 }
